@@ -1,0 +1,3 @@
+{% func GenerateLinux() %}
+  node_exporter:
+    enabled: true {% endfunc %}

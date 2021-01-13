@@ -1,0 +1,6 @@
+{% func GenerateRewrite(username string, password string) %}
+  prometheus_remote_write:
+    - url: https://prometheus-us-central1.grafana.net/api/prom/push
+      basic_auth:
+        username: "{%s= username %}"
+        password: {%s= password %} {% endfunc %}
